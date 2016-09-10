@@ -1,0 +1,16 @@
+<h1>{{ Memberdata.First_name}}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form method="post">
+{% csrf_token %}
+First Name:
+<input type=" text" name="first_name" >
+Last Name:
+<input type= 'text' name='last_name'>
+Date Of Birth:
+<input type='text' name='dob'>
+Sex:
+<input type='text' name='sex'> 
+
+</form>
